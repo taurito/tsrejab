@@ -1,0 +1,298 @@
+/* Reset base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Banner superior */
+.top-banner img {
+    width: 100%;
+    display: block;
+}
+
+/* Menú */
+.main-menu {
+    background: #000;
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px 20px;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.menu-links a:hover,
+.menu-links a.active {
+    color: #00f23d;
+    border-bottom: 2px solid #00f23d;
+}
+
+/* Contenedor */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    gap: 50px;
+}
+
+/* Formularios */
+.form-section {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botones */
+.btn-registrar,
+.btn-consultar {
+    background-color: #228B22;
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-registrar:hover,
+.btn-consultar:hover {
+    background-color: #1c6f1c;
+    transform: scale(1.05);
+}
+
+/* Logo */
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-section img {
+    max-width: 220px;
+    height: auto;
+    margin-top: 20px; /* Ajustable si aún está más alto */
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-content strong {
+    margin-bottom: 8px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Títulos */
+h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 300px; /* Ajusta el ancho del bloque */
+}
+
+.checkbox-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+.grid-form {
+    display: flex;
+    flex-direction: column; /* Ahora apila los elementos verticalmente */
+    gap: 15px;
+    margin-top: 15px;
+}
+/* Ajuste para el contenedor de requisitos */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    justify-content: space-between; /* Texto a la izquierda y checkbox a la derecha */
+    align-items: center;
+    background: #f9f9f9;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.checkbox-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-registrar:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+.ci-container {
+    display: flex;
+    gap: 8px;
+}
+
+.ci-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#ci {
+    flex: 3;
+}
+
+#ci_ext {
+    flex: 1;
+    display: none; /* Oculto por defecto */
+}
+
+.info-text {
+    color: #555;
+    font-size: 13px;
+}
+
+/* Grid de dos columnas */
+    .checkbox-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 20px; /* Espacio vertical y horizontal */
+    }
+    
+    /* Estilo para cada item de checkbox */
+    .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    /* Estilo para los checkboxes más pequeños */
+    .req-checkbox {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+    }
+    
+    /* Estilo para las etiquetas */
+    .checkbox-item span {
+        font-size: 10px;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-section img {
+        margin-top: 20px;
+        width: 200px;
+    }
+    .main-menu {
+        justify-content: center;
+    }
+}
