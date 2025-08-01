@@ -32,12 +32,7 @@
             <a href="#acerca">ACERCA DE</a>
         </div>
     </nav>
-
-    <form method="POST" action="{{ route('logout') }}">
-    @csrf
-    <button type="submit">Cerrar sesión</button>
-    </form>
-
+    
     <main>
         @yield('content')
     </main>
