@@ -57,17 +57,6 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     gap: 50px;
 }
-.container1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    gap: 50px;
-}
 
 /* Formularios */
 .form-section {
@@ -306,4 +295,83 @@ h2 {
     .main-menu {
         justify-content: center;
     }
+}
+
+
+
+/* Tabla */
+.tabla-fichas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-fichas th,
+.tabla-fichas td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-fichas th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.tabla-fichas tr:hover {
+    background-color: #f0f8ff;
+}
+
+/* Botón */
+.boton {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* Formulario */
+.formulario-ficha {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-ficha label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulario-ficha select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-ficha button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario-ficha button:hover {
+    background-color: #218838;
 }
